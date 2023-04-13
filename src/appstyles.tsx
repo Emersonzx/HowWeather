@@ -1,9 +1,10 @@
+  
 import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
   margin: 0 auto;
-  padding: 25px;
+  padding: 20px;
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -14,19 +15,22 @@ export const Container = styled.div`
   background-color: #020024;
  
 
-  @media (max-width: 767px) {
-    width: 100vw;
-    height: 100vh;
-  }
+  
 `;
 export const Image = styled.img`
-
+width: 350px;
 
 `
 export const Title = styled.h1`
 font-size: 35px;
 margin-top: 0;
 background-color: #020024;
+
+@media (max-width: 767px) {
+  font-size: 30px;
+  
+  
+}
 `
 export const Form = styled.form`
   display: flex;
