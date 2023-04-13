@@ -3,22 +3,26 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100vw;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
   align-text: center;
   font-size: 20px;
-  height: 100vh;
+  
   background-color: #020024;
  
 
   @media (max-width: 767px) {
     width: 100vw;
-    height: 100%vh;
+    height: 100vh;
   }
 `;
+export const Image = styled.img`
+
+
+`
 export const Title = styled.h1`
 font-size: 35px;
 margin-top: 0;

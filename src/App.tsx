@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { Container, Title, Form, Input, Button, WeatherContainer, CityName, WeatherDescription, WeatherInfo, WindInfo } from './appstyles';
+import { Container, Image, Title, Form, Input, Button, WeatherContainer, CityName, WeatherDescription, WeatherInfo, WindInfo } from './appstyles';
 import { WeatherData } from './types';
-
+import img from './img.svg'
 
 
 const WeatherApp: React.FC = () => {
@@ -32,6 +32,7 @@ const WeatherApp: React.FC = () => {
 
   return (
     <Container>
+      <Image src={img} alt="illustration" />
       <Title>Check out the weather</Title>
       <Form onSubmit={handleSubmit}>
         <Input type="text" ref={cityRef} placeholder="Enter city name" />
